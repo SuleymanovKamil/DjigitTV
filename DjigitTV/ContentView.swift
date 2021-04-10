@@ -15,7 +15,7 @@ struct ContentView: View {
     @StateObject var store = Store()
     @State private var showSplashScreen = true
     
-    var body: some View {
+    var body: some View { 
         VStack {
             if showSplashScreen {
                 

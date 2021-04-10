@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B4D4B2425D4683B00C76725 /* DjigitTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D4B2325D4683B00C76725 /* DjigitTVApp.swift */; };
+		6B4D4B2625D4683B00C76725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D4B2525D4683B00C76725 /* ContentView.swift */; };
+		6B4D4B2825D4683C00C76725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D4B2725D4683C00C76725 /* Assets.xcassets */; };
+		6B4D4B2B25D4683C00C76725 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D4B2A25D4683C00C76725 /* Preview Assets.xcassets */; };
+		6B7418C9262076DB0057F5EC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418C8262076DB0057F5EC /* API.swift */; };
+		6B7418CC262077660057F5EC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418CB262077660057F5EC /* Model.swift */; };
+		6B7418D4262086DA0057F5EC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6B7418D3262086DA0057F5EC /* SDWebImageSwiftUI */; };
+		6B7418DE26208D4B0057F5EC /* DjigitTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418DD26208D4B0057F5EC /* DjigitTV.swift */; };
+		6B7418EB2620FF5A0057F5EC /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418EA2620FF5A0057F5EC /* VideoPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B4D4B2025D4683B00C76725 /* DjigitTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjigitTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4D4B2325D4683B00C76725 /* DjigitTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjigitTVApp.swift; sourceTree = "<group>"; };
+		6B4D4B2525D4683B00C76725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B4D4B2725D4683C00C76725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B4D4B2A25D4683C00C76725 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B4D4B2C25D4683C00C76725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B7418C8262076DB0057F5EC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6B7418CB262077660057F5EC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6B7418DD26208D4B0057F5EC /* DjigitTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjigitTV.swift; sourceTree = "<group>"; };
+		6B7418EA2620FF5A0057F5EC /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B4D4B1D25D4683B00C76725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7418D4262086DA0057F5EC /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B4D4B1725D4683B00C76725 = {
+			isa = PBXGroup;
+			children = (
+				6B4D4B2225D4683B00C76725 /* DjigitTV */,
+				6B4D4B2125D4683B00C76725 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B4D4B2125D4683B00C76725 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D4B2025D4683B00C76725 /* DjigitTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B4D4B2225D4683B00C76725 /* DjigitTV */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D4B2525D4683B00C76725 /* ContentView.swift */,
+				6B7418DD26208D4B0057F5EC /* DjigitTV.swift */,
+				6B7418C8262076DB0057F5EC /* API.swift */,
+				6B7418EA2620FF5A0057F5EC /* VideoPlayer.swift */,
+				6B7418CB262077660057F5EC /* Model.swift */,
+				6B4D4B2725D4683C00C76725 /* Assets.xcassets */,
+				6B4D4B2325D4683B00C76725 /* DjigitTVApp.swift */,
+				6B4D4B2C25D4683C00C76725 /* Info.plist */,
+				6B4D4B2925D4683C00C76725 /* Preview Content */,
+			);
+			path = DjigitTV;
+			sourceTree = "<group>";
+		};
+		6B4D4B2925D4683C00C76725 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6B4D4B2A25D4683C00C76725 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B4D4B1F25D4683B00C76725 /* DjigitTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4D4B2F25D4683C00C76725 /* Build configuration list for PBXNativeTarget "DjigitTV" */;
+			buildPhases = (
+				6B4D4B1C25D4683B00C76725 /* Sources */,
+				6B4D4B1D25D4683B00C76725 /* Frameworks */,
+				6B4D4B1E25D4683B00C76725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DjigitTV;
+			packageProductDependencies = (
+				6B7418D3262086DA0057F5EC /* SDWebImageSwiftUI */,
+			);
+			productName = DjigitTV;
+			productReference = 6B4D4B2025D4683B00C76725 /* DjigitTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B4D4B1825D4683B00C76725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					6B4D4B1F25D4683B00C76725 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 6B4D4B1B25D4683B00C76725 /* Build configuration list for PBXProject "DjigitTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 6B4D4B1725D4683B00C76725;
+			packageReferences = (
+				6B7418D2262086DA0057F5EC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 6B4D4B2125D4683B00C76725 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B4D4B1F25D4683B00C76725 /* DjigitTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B4D4B1E25D4683B00C76725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4D4B2B25D4683C00C76725 /* Preview Assets.xcassets in Resources */,
+				6B4D4B2825D4683C00C76725 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B4D4B1C25D4683B00C76725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7418EB2620FF5A0057F5EC /* VideoPlayer.swift in Sources */,
+				6B4D4B2625D4683B00C76725 /* ContentView.swift in Sources */,
+				6B7418CC262077660057F5EC /* Model.swift in Sources */,
+				6B7418C9262076DB0057F5EC /* API.swift in Sources */,
+				6B7418DE26208D4B0057F5EC /* DjigitTV.swift in Sources */,
+				6B4D4B2425D4683B00C76725 /* DjigitTVApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6B4D4B2D25D4683C00C76725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B4D4B2E25D4683C00C76725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B4D4B3025D4683C00C76725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DjigitTV/Preview Content\"";
+				DEVELOPMENT_TEAM = XWJ7U5B2BL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DjigitTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = kaspsoft.com.DjigitTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B4D4B3125D4683C00C76725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DjigitTV/Preview Content\"";
+				DEVELOPMENT_TEAM = XWJ7U5B2BL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DjigitTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = kaspsoft.com.DjigitTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B4D4B1B25D4683B00C76725 /* Build configuration list for PBXProject "DjigitTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4D4B2D25D4683C00C76725 /* Debug */,
+				6B4D4B2E25D4683C00C76725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B4D4B2F25D4683C00C76725 /* Build configuration list for PBXNativeTarget "DjigitTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4D4B3025D4683C00C76725 /* Debug */,
+				6B4D4B3125D4683C00C76725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B7418D2262086DA0057F5EC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B7418D3262086DA0057F5EC /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B7418D2262086DA0057F5EC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6B4D4B1825D4683B00C76725 /* Project object */;
+}

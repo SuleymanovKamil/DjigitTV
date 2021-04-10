@@ -93,14 +93,6 @@ struct ContentView: View {
             }
         }
     }
-    var splashScreen: some View {
-          
-        Image("splash")
-            .resizable()
-            .frame(height: screenHeight)
-            .scaledToFill()
-          
-    }
 }
 
 

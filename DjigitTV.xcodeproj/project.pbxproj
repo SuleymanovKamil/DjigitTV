@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B4789632622D3A400DB3F5B /* DjigitTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418DD26208D4B0057F5EC /* DjigitTV.swift */; };
+		6B4789AC26237E9F00DB3F5B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4789AB26237E9F00DB3F5B /* API.swift */; };
+		6B4789BB2624477C00DB3F5B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4789BA2624477C00DB3F5B /* WebView.swift */; };
 		6B4D4B2425D4683B00C76725 /* DjigitTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D4B2325D4683B00C76725 /* DjigitTVApp.swift */; };
 		6B4D4B2625D4683B00C76725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4D4B2525D4683B00C76725 /* ContentView.swift */; };
 		6B4D4B2825D4683C00C76725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D4B2725D4683C00C76725 /* Assets.xcassets */; };
 		6B4D4B2B25D4683C00C76725 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D4B2A25D4683C00C76725 /* Preview Assets.xcassets */; };
-		6B7418C9262076DB0057F5EC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418C8262076DB0057F5EC /* API.swift */; };
 		6B7418CC262077660057F5EC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418CB262077660057F5EC /* Model.swift */; };
 		6B7418D4262086DA0057F5EC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6B7418D3262086DA0057F5EC /* SDWebImageSwiftUI */; };
-		6B7418DE26208D4B0057F5EC /* DjigitTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418DD26208D4B0057F5EC /* DjigitTV.swift */; };
 		6B7418EB2620FF5A0057F5EC /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7418EA2620FF5A0057F5EC /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B4789AB26237E9F00DB3F5B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6B4789BA2624477C00DB3F5B /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		6B4D4B2025D4683B00C76725 /* DjigitTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjigitTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4D4B2325D4683B00C76725 /* DjigitTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjigitTVApp.swift; sourceTree = "<group>"; };
 		6B4D4B2525D4683B00C76725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B4D4B2725D4683C00C76725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B4D4B2A25D4683C00C76725 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6B4D4B2C25D4683C00C76725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B7418C8262076DB0057F5EC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6B7418CB262077660057F5EC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		6B7418DD26208D4B0057F5EC /* DjigitTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjigitTV.swift; sourceTree = "<group>"; };
 		6B7418EA2620FF5A0057F5EC /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
@@ -63,10 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				6B4D4B2525D4683B00C76725 /* ContentView.swift */,
+				6B4789AB26237E9F00DB3F5B /* API.swift */,
 				6B7418DD26208D4B0057F5EC /* DjigitTV.swift */,
-				6B7418C8262076DB0057F5EC /* API.swift */,
 				6B7418EA2620FF5A0057F5EC /* VideoPlayer.swift */,
 				6B7418CB262077660057F5EC /* Model.swift */,
+				6B4789BA2624477C00DB3F5B /* WebView.swift */,
 				6B4D4B2725D4683C00C76725 /* Assets.xcassets */,
 				6B4D4B2325D4683B00C76725 /* DjigitTVApp.swift */,
 				6B4D4B2C25D4683C00C76725 /* Info.plist */,
@@ -161,10 +164,11 @@
 			files = (
 				6B7418EB2620FF5A0057F5EC /* VideoPlayer.swift in Sources */,
 				6B4D4B2625D4683B00C76725 /* ContentView.swift in Sources */,
+				6B4789632622D3A400DB3F5B /* DjigitTV.swift in Sources */,
 				6B7418CC262077660057F5EC /* Model.swift in Sources */,
-				6B7418C9262076DB0057F5EC /* API.swift in Sources */,
-				6B7418DE26208D4B0057F5EC /* DjigitTV.swift in Sources */,
+				6B4789AC26237E9F00DB3F5B /* API.swift in Sources */,
 				6B4D4B2425D4683B00C76725 /* DjigitTVApp.swift in Sources */,
+				6B4789BB2624477C00DB3F5B /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,19 +296,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DjigitTV/Preview Content\"";
-				DEVELOPMENT_TEAM = XWJ7U5B2BL;
+				DEVELOPMENT_TEAM = 929RA4TRH4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DjigitTV/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = kaspsoft.com.DjigitTV;
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = kaspsoft.com.DjigitTVNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,19 +321,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DjigitTV/Preview Content\"";
-				DEVELOPMENT_TEAM = XWJ7U5B2BL;
+				DEVELOPMENT_TEAM = 929RA4TRH4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DjigitTV/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = kaspsoft.com.DjigitTV;
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = kaspsoft.com.DjigitTVNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

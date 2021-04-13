@@ -54,15 +54,10 @@ struct LoadingView<Content>: View where Content: View {
                     .disabled(self.isShowing)
                     .blur(radius: self.isShowing ? 3 : 0)
 
-                VStack {
-                    Text("Загрузка...")
+            
+                   
                     ActivityIndicator(isAnimating: .constant(true), style: .large)
-                }
-                .frame(width: geometry.size.width / 2,
-                       height: geometry.size.height / 5)
-                .background(Color.secondary.opacity(0.1))
-                .foregroundColor(Color.primary)
-                .cornerRadius(20)
+              
                 .opacity(self.isShowing ? 1 : 0)
 
             }

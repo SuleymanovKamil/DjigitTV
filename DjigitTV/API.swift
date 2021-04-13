@@ -14,12 +14,16 @@ class Store: ObservableObject{
         guard let url = URL(string: "https://djigit-tv.ru/playlist.php") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
-            if let data = data{
-                let comments = try! JSONDecoder().decode([channel].self, from: data)
+            if let data =  try? Data(contentsOf: url){
+                let decoder = JSONDecoder()
+                
+                if let jsonChannels = try? decoder.decode([channel].self, from: data){
+                
                 DispatchQueue.main.async {
-                    self.channels = comments
+                    self.channels = jsonChannels
                     print("Получил данные с API")
                 }
+            }
             }
         }
         .resume()

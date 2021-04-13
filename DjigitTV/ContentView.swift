@@ -19,7 +19,6 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 if showSplashScreen {
-                    
                     VStack {
                         Image("logo")
                             .edgesIgnoringSafeArea(.all)
@@ -27,17 +26,16 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 } else  if noInternetConnection {
                     
-                ZStack {
-                    
-                    Image("back")
-                        .resizable()
-                        .clipped()
-                        .edgesIgnoringSafeArea(.all)
-                        .scaledToFill()
-                        .frame(width:screenWidth)
-                        .zIndex(0)
-                    
-                    VStack (spacing: 10){
+                    ZStack {
+                        Image("back")
+                            .resizable()
+                            .clipped()
+                            .edgesIgnoringSafeArea(.all)
+                            .scaledToFill()
+                            .frame(width:screenWidth)
+                            .zIndex(0)
+                        
+                        VStack (spacing: 10){
                             Text("УПС!")
                                 .font(.system(size: 50))
                                 .foregroundColor(.white)
@@ -57,12 +55,47 @@ struct ContentView: View {
                                     .padding(.horizontal)
                                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 0.5).foregroundColor(.white))
                             })
+                        }
                     }
-                }
+                } else  if !noInternetConnection && store.channels.isEmpty {
+                    
+                    ZStack {
+                        Image("back")
+                            .resizable()
+                            .clipped()
+                            .edgesIgnoringSafeArea(.all)
+                            .scaledToFill()
+                            .frame(width:screenWidth)
+                            .zIndex(0)
+                        
+                        VStack (spacing: 10){
+                            Text("УПС!")
+                                .font(.system(size: 50))
+                                .foregroundColor(.white)
+                                .fontWeight(.thin)
+                            
+                            Text("У нас ведутся технические работы")
+                                .font(.system(size: 30))
+                                .foregroundColor(.white)
+                                .fontWeight(.thin)
+                            
+                            Button(action: {store.getChannels()}, label: {
+                                Text("Обновить")
+                                    .font(.system(size: 30))
+                                    .foregroundColor(.white)
+                                    .fontWeight(.thin)
+                                    .padding(5)
+                                    .padding(.horizontal)
+                                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 0.5).foregroundColor(.white))
+                            })
+                        }
+                    }
+                    
                 } else {
                     DjigitTV()
                         .transition(.flipFromTop)
                         .animation(.spring())
+                    
                 }
             }
             .navigationBarHidden(true)
@@ -76,9 +109,11 @@ struct ContentView: View {
                             .zIndex(0))
             .environmentObject(store)
             .onAppear{
-             
+                
+                if store.channels.isEmpty{
                     store.getChannels()
-            
+                }
+                
                 monitor.start(queue: queue)
                 monitor.pathUpdateHandler = { path in
                     if path.status == .satisfied {
@@ -93,8 +128,9 @@ struct ContentView: View {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     showSplashScreen = false
                 }
+            }
         }
-        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -102,7 +138,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            
+        
         
     }
 }

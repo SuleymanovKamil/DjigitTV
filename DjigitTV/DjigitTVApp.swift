@@ -18,8 +18,6 @@ struct DjigitTVApp: App {
     }
 }
 
-import UIKit
-
 class MyAppDelegate: NSObject, UIApplicationDelegate {
     func application(
         _ application: UIApplication,

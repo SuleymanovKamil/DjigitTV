@@ -9,6 +9,11 @@ import SwiftUI
 
 class Store: ObservableObject{
     @Published var channels: [channel] = []
+    //videoPlayer properties
+    @Published var play = false
+    @Published var isLoading = false
+    @Published var  url = "url"
+    @Published var  channelURL = "url"
     
     func getChannels() {
         guard let url = URL(string: "https://djigit-tv.ru/playlist.php") else { return }
@@ -28,6 +33,8 @@ class Store: ObservableObject{
         }
         .resume()
     }
+    
+    
 }
 
 

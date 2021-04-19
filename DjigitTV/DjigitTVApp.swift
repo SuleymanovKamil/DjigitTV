@@ -19,6 +19,14 @@ struct DjigitTVApp: App {
 }
 
 class MyAppDelegate: NSObject, UIApplicationDelegate {
+    static var orientationLock =
+    UIInterfaceOrientationMask.landscapeRight
+
+    func application(_ application: UIApplication,
+    supportedInterfaceOrientationsFor window:
+    UIWindow?) -> UIInterfaceOrientationMask {
+    return MyAppDelegate.orientationLock
+    }
     func application(
         _ application: UIApplication,
         configurationForConnecting connectingSceneSession: UISceneSession,

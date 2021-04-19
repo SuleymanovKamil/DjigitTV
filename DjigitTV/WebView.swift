@@ -10,6 +10,7 @@ import WebKit
 
 struct Web: View {
     @ObservedObject var webViewStateModel: WebViewStateModel = WebViewStateModel()
+
     var url: String
     var body: some View {
         
@@ -18,12 +19,23 @@ struct Web: View {
                 //Add onNavigationAction if callback needed
                 WebView(url: URL.init(string: url)!, webViewStateModel: self.webViewStateModel)
                     .edgesIgnoringSafeArea(.all)
+                    .onAppear {
+                        MyAppDelegate.orientationLock = UIInterfaceOrientationMask.portrait
+                            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+                            UINavigationController.attemptRotationToDeviceOrientation()
+                        }
+                    .onDisappear {
+                        withAnimation{
+                           DispatchQueue.main.async {
+                            MyAppDelegate.orientationLock = UIInterfaceOrientationMask.landscapeRight
+                               UIDevice.current.setValue(UIInterfaceOrientation.landscapeRight.rawValue, forKey: "orientation")
+                               UINavigationController.attemptRotationToDeviceOrientation()
+                           }
+                           }
+                    }
             }
             .navigationBarTitle(Text(webViewStateModel.pageTitle), displayMode: .inline)
-           
-        
-     
-        
+          
     }
 }
 

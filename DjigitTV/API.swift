@@ -6,14 +6,18 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 class Store: ObservableObject{
     @Published var channels: [channel] = []
     //videoPlayer properties
     @Published var play = false
     @Published var isLoading = false
-    @Published var  url = "url"
-    @Published var  channelURL = "url"
+    @Published var url = "url"
+    @Published var channelURL = "url"
+    @Published var showPlayer = false
+    @Published var player = AVPlayer(playerItem: nil)
+    
     
     func getChannels() {
         guard let url = URL(string: "https://djigit-tv.ru/playlist.php") else { return }
